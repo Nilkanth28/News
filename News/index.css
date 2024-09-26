@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Featured News */
+.featured-news {
+    background-image: url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.featured-news-content h2 {
+    font-size: 2.5rem;
+}
+
+.featured-news-content p {
+    font-size: 1.2rem;
+}
+
+.btn-read-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e60000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-read-more:hover {
+    background-color: #c40000;
+}
+
+/* Recent News */
+.recent-news {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.recent-news h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    transition: box-shadow 0.3s;
+    text-align: center;
+}
+
+.news-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    max-width: 100%;
+    height: 50%;
+}
+
+.news-item h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #e60000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* News Title: Display only one line followed by "..." */
+.news-item h3 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #e60000;
+    overflow: hidden;
+    white-space: nowrap; /* This ensures the title stays on one line */
+    text-overflow: ellipsis; /* This adds "..." at the end if it's too long */
+}
+
+/* News Description: Display 3 lines followed by "..." */
+.news-item p {
+    color: #555;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Limit to 1 lines */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis; /* Add "..." if content exceeds the limit */
+}
+
+/* Pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-item {
+    margin: 0 5px;
+    padding: 10px 15px;
+    background-color: #e60000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-item.active {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.pagination-item:hover {
+    background-color: #c40000;
+}
+
+/* Image for News Items */
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensure the image fits well */
+    margin-bottom: 10px;
+}
+
+/* Fallback image if no image is available */
+.news-item img {
+    max-width: 100%;
+    height: 50%;
+}
+
+/* Image for News Items */
+.news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensure the image fits nicely */
+    margin-bottom: 10px;
+}
+
+
